@@ -21,5 +21,9 @@ def user(name):
 def admin():
     return redirect(url_for("user",name="Jianzhuo Ye")) #Type your name
 
+@app.route("/admin123")
+def admin123():
+    return redirect(url_for("user",name="Sue deer")) #Type your name
+
 if __name__ == "__main__":
     app.run()

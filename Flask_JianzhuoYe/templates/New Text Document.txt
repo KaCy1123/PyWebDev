@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Flask Input and Output</title>
+	</head>
+
+	<body>
+		<h1>Input more information</h1>
+		<form method="post">
+			<label id="lbllname">Enter your last name:</label>
+			<input type="text" name="txtlname"> <br>
+			<label id="lblnumber">Enter your number:</label>
+			<input type="text" name="txtnumber"> <br>
+		</form>
+	</body
+</html>
