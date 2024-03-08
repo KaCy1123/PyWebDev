@@ -13,9 +13,5 @@ app = Flask(__name__)
 def home():
     return render_template("personinfo.html")
 
-@app.route("/1")
-def moreinfo():
-    return render_template("anotherinfo.html")
-
 if __name__ == "__main__":
     app.run()
