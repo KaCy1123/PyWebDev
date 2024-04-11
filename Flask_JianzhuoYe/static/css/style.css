@@ -1,0 +1,15 @@
+body{
+	text-align: center;
+	padding: 2px;
+}
+
+table{
+	text-align: center;
+	border: solid;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td{
+	border: solid;
+}

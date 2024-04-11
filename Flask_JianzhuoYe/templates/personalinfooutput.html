@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Flask Input and Output</title>
+		<link rel="stylesheet"  type="text/css" href="/static/css/style.css">
+	</head>
+
+	<body>
+		<h1>Schedule</h1>
+		<table>
+			<tr>
+				{%for header in headings%}
+				<th>{{header}}</th>
+				{%endfor%}
+			</tr>
+			{%for row in data%}
+			<tr>
+				{%for cell in row%}
+				<td>{{cell}}</td>
+				{%endfor%}
+			</tr>
+			{%endfor%}
+		</table>
+		
+		<p>
+			Overall Average: {{totalaverage}}
+		</p>
+	</body
+</html>
