@@ -7,26 +7,75 @@
 		{{Name}} {{Middle}} {{Last}}
 		- Mathematics
 		</h1>
-		<div id="calc1">
-			<button type="button" name="button" id="btnone" value="add">+</button>
-			<button type="button" name="button" id="btntwo" value="minus">-</button>
-			<button type="button" name="button" id="btnthree" value="times">*</button>
-			<button type="button" name="button" id="btnthree" value="divide">/</button>
-		</div>
-		<div id="calc2">
-			<button type="button" name="button" id="btnseven" value="7">7</button>
-			<button type="button" name="button" id="btneight" value="8">8</button>
-			<button type="button" name="button" id="btnnine" value="9">9</button>
-		</div>
-		<div id="calc3">
-			<button type="button" name="button" id="btnfour" value="4">4</button>
-			<button type="button" name="button" id="btnfive" value="5">5</button>
-			<button type="button" name="button" id="btnsix" value="6">6</button>
-		</div>
-		<div id="calc4">
-			<button type="button" name="button" id="btnone" value="1">1</button>
-			<button type="button" name="button" id="btntwo" value="2">2</button>
-			<button type="button" name="button" id="btnthree" value="3">3</button>
-		</div>
-	</body>
+        <form method="post">
+            <div id="output">
+                <input id="txtoutput" disabled placeholder={{output}}>
+            </div>
+            <div id="row0">
+                <button type="submit" name="button" id="btnclear" value="clear">AC</button>
+                <button type="submit" name="button" id="btnsin" value="sine">sin()</button>
+                <button type="submit" name="button" id="btncos" value="cosine">cos()</button>
+                <button type="submit" name="button" id="btntan" value="tangent">tan()</button>
+            </div>
+            <div id="row1">
+                <button type="submit" name="button" id="btnsin" value="arcsine">arcsin()</button>
+                <button type="submit" name="button" id="btncos" value="arccosine">arccos()</button>
+                <button type="submit" name="button" id="btntan" value="arctangent">arctan()</button>
+            </div>
+            <div id="row2">
+                <button type="submit" name="button" id="btndelete" value="delete">del</button>
+                <button type="submit" name="button" id="btne" value="e">e</button>
+                <button type="submit" name="button" id="btnsqrt" value="root">√</button>
+                <button type="submit" name="button" id="btnsquare" value="square">x^2</button>
+                <button type="submit" name="button" id="btndivide" value="divide">/</button>
+            </div>
+            <div id="row3">
+                <button type="submit" name="button" id="btnseven" value="7">7</button>
+                <button type="submit" name="button" id="btneight" value="8">8</button>
+                <button type="submit" name="button" id="btnnine" value="9">9</button>
+                <button type="submit" name="button" id="btnexp" value="exponent">x^y</button>
+                <button type="submit" name="button" id="btntimes" value="times">x</button>
+            </div>
+            <div id="row4">
+                <button type="submit" name="button" id="btnfour" value="4">4</button>
+                <button type="submit" name="button" id="btnfive" value="5">5</button>
+                <button type="submit" name="button" id="btnsix" value="6">6</button>
+                <button type="submit" name="button" id="btndeci" value="percent">%</button>
+                <button type="submit" name="button" id="btnminus" value="minus">-</button>
+            </div>
+            <div id="row5">
+                <button type="submit" name="button" id="btnone" value="1">1</button>
+                <button type="submit" name="button" id="btntwo" value="2">2</button>
+                <button type="submit" name="button" id="btnthree" value="3">3</button>
+                <button type="submit" name="button" id="btnabs" value="absolute">|x|</button>
+                <button type="submit" name="button" id="btnplus" value="add">+</button>
+            </div>
+            <div id="row6">
+                <button type="submit" name="button" id="btnzero" value="0">0</button>
+                <button type="submit" name="button" id="btndot" value="dot">.</button>
+                <button type="submit" name="button" id="btnsign" value="sign">(-)</button>
+                <button type="submit" name="button" id="btnequal" value="equals">=</button>
+            </div>
+        </form>
+        <form method="post">
+            <label id="lblPeriod">Period (in Years):</label>
+            <input type="text" id="txtPeriod" name="txtPeriod" value="0"> <br>
+            <label id="lblInitial">Initial Amount (in $):</label>
+            <input type="text" id="txtInitial" name="txtInitial" value="0"> <br>
+            <label id="lblRate">Interest Rate (in %):</label>
+            <input type="text" id="txtRate`" name="txtRate" value="0"> <br>
+            <button type="submit" name="button" id="btnFinance" value="CALCULATE">Calculate</button>
+        </form>
+        <label>{{FInterest}}</label>
+        <form method="post">
+            <label id="lblQ1">What is 19/2?</label>
+            <input type="text" id="txtQ1" name="txtQ1" value=""> <br>
+            <label id="lblQ2">What is 1+2?</label>
+            <input type="text" id="txtQ2" name="txtQ2" value=""> <br>
+            <label id="lblQ3">What is the integral from 520 to 625 of (sin(x)*cos(e)(tan(e)))/(-sin(x)+csc(x)(cot(e^2)))dx?</label>
+            <input type="text" id="txtQ3" name="txtQ3" value=""> <br>
+            <button type="submit" name="button" id="btnQSub" value="SUBMIT">Submit</button>
+        </form>
+        
+    </body>
 <html>

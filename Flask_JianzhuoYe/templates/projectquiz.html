@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Page 3</title>
+	</head>
+	<body>
+		<h1>
+		{{Name}} {{Middle}} {{Last}}
+		- Quiz
+		</h1>
+        <p1>
+        Math Questions and answers: <br>
+            Q1:What is 19/2? <br>
+            Solution: {{ans1}} <br>
+            Input: {{inp1}} <br>
+            Q3:What is 1+2? <br>
+            Solution: {{ans2}} <br>
+            Input: {{inp2}} <br>
+            Q3:What is What is the integral from 520 to 625 of (sin(x)*cos(e)(tan(e)))/(-sin(x)+csc(x)(cot(e^2)))dx?? <br>
+            Solution: {{ans3}} <br>
+            Input: {{inp3}} <br>
+        Total Score: {{Qscore}}
+            
+        </p1>
+        <form method="post">
+            <label id="lblT1">What is the capital of Germany? {{Tans1}}</label> 
+            <input type="text" id="txtT1" name="txtT1" value=""> <br> 
+            <label id="lblT2">What is Mr. Pigis' first name? {{Tans2}}</label>
+            <input type="text" id="txtT2" name="txtT2" value=""> <br>
+            <label id="lblT3">Who made the song "Thriller"? {{Tans3}}</label>
+            <input type="text" id="txtT3" name="txtT3" value=""> <br>
+            <button type="submit" name="button" id="btnTSub" value="SUBMIT">Submit</button>
+        </form>
+        <label>
+        {{lst[0]}} <br>
+        {{lst[1]}} <br>
+        {{lst[2]}} <br>
+        {{lst[3]}} <br>
+        {{lst[4]}} <br>
+        {{lst[5]}} <br>
+        {{lst[6]}} <br>
+        </label>
+    </body>
+<html>
