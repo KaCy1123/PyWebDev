@@ -1,0 +1,12 @@
+body{
+	font-size: 30px;
+	text-align: center;
+}
+table{
+		margin-left: auto;
+		margin-right: auto;
+}
+table, th, td{
+	border: solid;
+	padding: 2px;
+}

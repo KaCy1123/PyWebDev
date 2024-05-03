@@ -1,3 +1,8 @@
+'''
+Name: Jianzhuo Ye
+Start Date: April 2nd
+End Date: April 12th
+'''
 from flask import Flask, render_template, request, redirect
 import math
 
@@ -476,7 +481,8 @@ def Submit():
     global score, solution1, solution2, solution3, input1, input2, input3
     solution1 = "9.5"
     solution2 = "3"
-    solution3 = "-(cos(e)*tan(e)*sqrt(cot(e^2))*(ln(abs((cot(e^2)-1)*tan(x)+sqrt(1-cot(e^2))*sqrt(cot(e^2))))-ln(abs((cot(e^2)-1)*tan(x)-sqrt(1-cot(e^2))*sqrt(cot(e^2))))))/(2*sqrt(1-cot(e^2)))-cos(e)*tan(e)*x"
+    solution3 = "-(cos(e)*tan(e)*sqrt(cot(e^2))*(ln(abs((cot(e^2)-1)*tan(x)+sqrt(1-cot(e^2))*sqrt(cot(e^2))))-"
+    solution3 = solution3 + "ln(abs((cot(e^2)-1)*tan(x)-sqrt(1-cot(e^2))*sqrt(cot(e^2))))))/(2*sqrt(1-cot(e^2)))-cos(e)*tan(e)*x"
     input1 = request.form.get('txtQ1')
     input2 = request.form.get('txtQ2')
     input3 = request.form.get('txtQ3')
@@ -530,9 +536,9 @@ def quizCalc():
     Tsolution1 = "Berlin"
     Tsolution2 = "Anthony"
     Tsolution3 = "Michael Jackson"
-    Tinput1 = request.form.get('txtQ1')
-    Tinput2 = request.form.get('txtQ2')
-    Tinput3 = request.form.get('txtQ3')
+    Tinput1 = request.form.get('txtT1')
+    Tinput2 = request.form.get('txtT2')
+    Tinput3 = request.form.get('txtT3')
     Tinput1 = str(Tinput1)
     Tinput2 = str(Tinput2)
     Tinput3 = str(Tinput3)
